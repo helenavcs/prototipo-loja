@@ -1,0 +1,377 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url(img/background.png);
+    background-repeat: repeat;
+}
+
+/*cabeçalho*/
+.cabeçalho{
+    background-color: black;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    top: -35px;
+}
+
+.cabeçalho-botao{
+    border: none;
+    background-color: #f2bdca00;
+    color: rgb(255, 255, 255);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 150%;
+    margin: 20px;
+    position: relative;
+    top: -15px;
+}
+
+.cabeçalho a{
+    text-decoration: none;
+}
+
+.logo{
+    margin: 20px;
+    position: relative;
+    top: 30px;
+}
+
+
+.container-1{
+    background-color: rgba(12, 12, 12, 0.925);
+    margin: 0;
+    padding: 20px;
+    margin-top: -3%;
+}
+
+.container-1-dentro{
+    margin: 30px;
+    padding: 30px;
+}
+
+/*rodapé*/
+.rodapé{
+    margin: 0%;
+    background-color: black;
+    text-align: right;
+    position: relative;
+}
+
+.rodapé-botao{
+    border: none;
+    background-color: #f2bdca00;
+    color: rgb(255, 255, 255);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 150%;
+    margin: 20px;
+}
+
+h1{
+    /*font-family: Alumni Sans Pinstripe;*/
+    font-family: Viaoda Libre;
+    text-align: center;
+    font-size: 250%;
+    margin: 0;
+}
+
+h3{
+   font-family: Viaoda Libre;
+    text-align: center;
+    font-size: 150%; 
+    margin: 5;
+}
+
+.container-inical{
+    text-align: center;
+}
+/*---------------------------------------*/
+
+.container-segundo{
+    background-color: rgba(0, 0, 0, 0.034);
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.promocoes{
+    background-color: #000000;
+    padding: 3px;
+    margin: 0px;
+}
+
+.promocoes p {
+    font-family: Viaoda Libre;
+    text-align: center;
+    color: #ffffff;
+    font-size: 230%;
+    margin: 20px;
+}
+
+.produto-container{
+    /*background-image: url(img/fundo2.png);*/
+    background-color: #ccc;
+    /*background-size: 90%;*/
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+    width: 100px;
+}
+
+.produto{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.produto-container h2{
+    color: rgb(0, 0, 0);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 120%;
+    text-align: center;
+    margin:5px;
+}
+
+.produto-container h4{
+    color: rgb(0, 0, 0);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 150%;
+    text-align: center;
+    margin: 0%;
+}
+
+.produto-container h6{
+    color: rgb(29, 29, 29);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 90%;
+    text-align: center;
+    margin: 0%;
+}
+
+.produto-container p{
+    color: rgb(112, 1, 1);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 150%;
+    text-align: center;
+    margin: 0%;
+}
+
+.container-terceiro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+ /* resolução do botão "cardápio" no menu */
+ .botao-produtos{
+    transition: transform 0.3s;
+ }
+
+/* animação dos botões */
+.botao-produtos:hover {
+    transform: scale(1.1);
+}
+
+.botao-produtos:active {
+    animation: pulsar 0.
+}
+
+/* posição do dropdown do botão cardápio */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+
+/* conteudo do dropdown */
+.dropdown-conteudo {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  left: -15px;
+  top: 50px;
+}
+
+/* link dentro do dropdown */
+.dropdown-conteudo a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Alumni Sans Pinstripe;
+  font-size: 150%;
+}
+
+/* muda a cor do botão quando o cursor é passado por cima */
+.dropdown-conteudo a:hover {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* mostra o dropdown quando o cursor é passado por cima  */
+.dropdown:hover .dropdown-conteudo {
+    display: block;
+    animation: pulsar 0.;
+}
+/**-------------------------------------------------------------------------/
+/* muda o fundo do botão quando o mouse é passado por cima */
+.dropdown:hover .botao-produtos {
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+    transform: scale(1.1);
+}
+
+.dropdown:hover .botao-produtos a{
+    color: rgb(148, 1, 1);
+}
+
+/*------------------*/
+.botao-produtos2{
+    transition: transform 0.3s;
+ }
+
+/* animação dos botões */
+.botao-produtos2:hover {
+    transform: scale(1.1);
+}
+
+
+
+.popover {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    font-family: Red Hat Display;
+    text-align: center;
+    z-index: 20000;
+}
+
+.popover h2{
+  color: rgb(0, 0, 0);
+  font-family: Viaoda Libre;
+}
+
+.popover h6{
+  font-style: italic;
+}
+
+.popover p{
+  color: #333;
+  font-size: 15px;
+}
+
+/* Quando o popover for alvo */
+:target {
+    display: block;
+}
+
+.close-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    float: right;
+}
+
+.newsletter-caixa{
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  font-family: Red Hat Display;
+}
+
+.newsletter-botão{
+    background-color: #000000;
+    color: #ffffff;
+
+    font-family:  Red Hat Display;
+    font-size: 20px;
+    border: none;
+    border-radius: 21px;
+    padding: 13px;
+}
+
+.botao-carrinho{
+    border: none;
+    background-color: #f2bdca00;
+    color: rgb(255, 255, 255);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 150%;
+    margin: 0px;
+    position: relative;
+    top: -15px;
+    text-align: right;
+}
+
+.icone-carrinho{
+    filter:invert(100%)
+}
+
+.botao-login{
+    border: none;
+    background-color: #f2bdca00;
+    color: rgb(255, 255, 255);
+    font-family: Alumni Sans Pinstripe;
+    font-size: 150%;
+    margin: 0px;
+    position: relative;
+    top: -15px;
+    text-align: right;
+}
+
+.carrinho-login {
+  position: absolute;
+  right: 20px;
+  top: 63%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sociais{
+display: flex;
+align-items: center;
+gap: 10px;
+position: absolute;
+left: 20px;
+bottom: 35%;
+width: 7%;
+}
+
+.opçoes{
+ position: absolute;
+  left: 20px;
+  top: 50%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 7%;
+}
