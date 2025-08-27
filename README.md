@@ -4,5 +4,5 @@
 # Loja Virtual
 
 WIP
-Este projeto apresenta uma interface web direcionada a uma loja virtual.
-Website não funcional.
+- Este projeto apresenta uma interface web direcionada a uma loja virtual.
+- Website não funcional.
